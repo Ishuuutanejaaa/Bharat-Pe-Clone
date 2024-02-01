@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatPe</title>
+    <script src="https://kit.fontawesome.com/40446ccdcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="merchant.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-image: url('background image.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+            background-size: cover; /* Adjusts the background image size to cover the entire screen */
+            background-repeat: no-repeat; /* Ensures the background image is not repeated */
+            position: relative;
+            min-height: 350vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: larger; /* Increased font size */
+        }
+
+        nav {
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav img {
+            max-height: 40px;
+            margin-right: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto; /* Center the list items */
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative; /* Add relative positioning for dropdown */
+        }
+
+        li:hover {
+            background-color: #ddd; /* Change background color on hover */
+            border-radius: 5px; /* Add rounded corners on hover */
+        }
+
+        .dropdown {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            top: calc(100% + 10px); /* Position below the parent li */
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1; /* Ensure dropdown appears above other elements */
+            min-width: 120px; /* Set a minimum width */
+            text-align: left; /* Align dropdown items to the left */
+        }
+
+        li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+
+        .dropdown a:hover {
+            background-color: #f0f0f0; /* Change background color on hover */
+        }
+
+        footer {
+            background-color: gray;
+            color: black;
+            padding: 20px;
+            text-align: left;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer .footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+
+        }
+
+        .footer img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .footer p {
+            color: black;
+            font-size: smaller;
+        }
+
+        .footer h2 {
+            color: black;
+            font-size: 18px;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            color: black;
+            margin-top: 10px;
+            display: grid;
+            align-content: center;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px;
+        }
+
+        .social-buttons a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .copyrighttext{
+            width: 100%;
+            background-color: gray;
+            padding: 10px 10px 10px;
+            text-align: center;
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="BharatPe Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li>
+                <a href="#">Products</a>
+                <div class="dropdown">
+                    <a href="merchant.html">Merchants</a>
+                    <a href="consumer.html">Consumer</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+                <div class="dropdown">
+                    <a href="blog.html">Blogs</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="king">
+        <h1>Payments</h1>
+    </div>
+    <section class="queen">
+        <div class="que">
+            <img src="merchant qr.jpeg" alt="qrcode">
+            <h2 style="color: white;"><b>BharatPe QR</b></h2>
+        </div>
+        <div class="que">
+            <img src="merchant swipe.jpeg" alt="qrcode">
+            <h2 style="color: white;"><b>BharatPe Swipe</b></h2>
+        </div>
+        <div class="que">
+            <img src="merchant speaker.jpeg" alt="qrcode">
+            <h2 style="color: white;"><b>BharatPe Speaker</b></h2>
+        </div>
+    </section>
+    <div class="ing">
+        <div class="eng">
+            <img src="investment-platform merchant.png" alt="investment">
+        </div>
+        <div class="fng">
+            <h1>Make Your</h1>
+            <h1 style="color: rgba(81, 81, 236, 0.822);">Investments</h1>
+            <h1 style="color: rgba(81, 81, 236, 0.822);">more</h1>
+            <h1 style="color: rgba(81, 81, 236, 0.822);">Rewarding</h1>
+        </div>
+    </div>
+    <section class="kl">
+        <h1>Benefits of Investment Platform</h1>
+        <section class="mk">
+            <figure class="mki">
+                <img src="merchantfig 1.jpg" alt="figure">
+                <figcaption>
+                    <p>Invest with RBI-regulated NBFC partners</p>
+                </figcaption>
+            </figure>
+            <figure class="mki">
+                <img src="merchant fig 2.jpg" alt="figure">
+                <figcaption>
+                    <p>Earn up to 12% return on your investment</p>
+                </figcaption>
+            </figure>
+            <figure class="mki">
+                <img src="merchant fig 3.jpg" alt="figure">
+                <figcaption>
+                    <p>Recieve daily earnings and see your wealth grow everyday</p>
+                </figcaption>
+            </figure>
+            <figure class="mki">
+                <img src="merchant fig 4.jpg" alt="figure">
+                <figcaption>
+                    <p>Request withdrawal anytime 48 hours in your bank account</p>
+                </figcaption>
+            </figure>
+            <figure class="mki">
+                <img src="merchant fig 5.jpg" alt="figure">
+                <figcaption>
+                    <p>Add money using easy modes such as UPI and net  Banking </p>
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+    <div class="container">
+        <div class="image-container">
+          <img src="call-back merchant.png" alt="Image" style="max-width: 100%; height: auto;">
+          <h1 style="color: blue;"><b>Get a call Back</b></h1>
+        </div>
+        <div class="form-container">
+          <form action="#">
+            <input type="text" name="firstname" placeholder="First Name" required><br>
+            <input type="text" name="lastname" placeholder="Last Name" required><br>
+            <input type="tel" name="phone" placeholder="Phone Number" required><br>
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    <footer>
+        <div class="footer">
+            <div class="aboutus">
+                <img src="logo.jpg" alt="logo" width="25px" height="25px">
+                <p>BharatPe was started in 2018 with the mission to build a holistic FinTech platform for offline merchants and 
+                    small businesses. Today, BharatPe offers a suite of simple, easy-to-use and secure fintech products including payments
+                    and business loans to its merchant partners. The company has an extensive network of 13+ million merchants across 450+ 
+                    cities in the country.BharatPe’s consumer offering postpe is one of the fastest-growing 
+                    products in the Buy-Now- Pay-Later industry.</p>
+            </div>
+            <div class="quicklinks">
+                <h2>General</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.bharatpe.app&gl=IN&pli=1"><i class="fab fa-google-play"></i></a>
+                <a href="https://apps.apple.com/us/app/bharatpe/id1329385873"><i class="fab fa-app-store-ios"></i></a>
+                <a href="https://www.instagram.com/bharat.pe/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/bharatpeindia"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.youtube.com/@BharatPeIndia"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyrighttext">
+            <p>2024 All rights are reserved </p>
+        </div>
+    </footer>
+</body>
+</html>

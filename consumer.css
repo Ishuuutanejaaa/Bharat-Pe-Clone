@@ -1,0 +1,30 @@
+.kk{
+    margin-top: 80px;
+    text-align: center;
+}
+.emp{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.np{
+    border: 1px solid white;
+    background-color: gray;
+    width: 300px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.np img{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 300px;
+    height: 200px;
+}
+.np a{
+    font-size: large;
+    margin-top: 20px;
+    padding-left: 50px;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatPe</title>
+    <script src="https://kit.fontawesome.com/40446ccdcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="PRESS.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body {
+            background-image: url('background image.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+            background-size: cover; /* Adjusts the background image size to cover the entire screen */
+            background-repeat: no-repeat; /* Ensures the background image is not repeated */
+            position: absolute;
+            min-height: 420vh;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: larger; /* Increased font size */
+        }
+        nav {
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav img {
+            max-height: 40px;
+            margin-right: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto; /* Center the list items */
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative; /* Add relative positioning for dropdown */
+        }
+        li:hover {
+            background-color: #ddd; /* Change background color on hover */
+            border-radius: 5px; /* Add rounded corners on hover */
+        }
+        .dropdown {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            top: calc(100% + 10px); /* Position below the parent li */
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1; /* Ensure dropdown appears above other elements */
+            min-width: 120px; /* Set a minimum width */
+            text-align: left; /* Align dropdown items to the left */
+        }
+        li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+        .dropdown a:hover {
+            background-color: #f0f0f0; /* Change background color on hover */
+        }
+        footer {
+            background-color: gray;
+            color: black;
+            padding: 20px;
+            text-align: left;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+        }
+        footer .footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .footer img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .footer p {
+            color: black;
+            font-size: smaller;
+        }
+        .footer h2 {
+            color: black;
+            font-size: 18px;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            color: black;
+            margin-top: 10px;
+            display: grid;
+            align-content: center;
+        }
+        .footer ul li {
+            margin-bottom: 5px;
+        }
+        .social-buttons a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .copyrighttext{
+            width: 100%;
+            background-color: gray;
+            padding: 10px 10px 10px;
+            text-align: center;
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="BharatPe Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li>
+                <a href="#">Products</a>
+                <div class="dropdown">
+                    <a href="#">Merchants</a>
+                    <a href="#">Consumer</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+                <div class="dropdown">
+                    <a href="blog.html">Blogs</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <img src="press logo.jpg" alt="presslogo" class="presslogo">
+    <h2 style="text-align: center;"><b>Press Release</b></h2>
+    <section class="recent">
+        <div class="image">
+            <img src="recentnews.jpg" alt="recent">
+        </div>
+        <div class="para">
+            <h3><b>Recent News</b></h3>
+            <h4 style="color: gray;">March 30,2023</h4>
+            <p><b>BharatPe Group partners with Women Entrepreneurship Platform to foster women entrepreneurship in India</b></p>
+            <p style="color: gray;">The partnership will focus on the development of a first-of-its-kind aggregator platform for women entrepreneurs,
+                 with the objective of providing access to peer support, mentorship,
+                  networking channels and a wide range of learning resources.</p>
+        </div>  
+    </section>
+
+    <section class="newsdaily">
+        <div class="first">
+            <h4 style="color: gray;">January 24,2023</h4>
+            <p><b>BharatPe bolsters team: Appoints CISO, Head- Internal Audit and Head-Compliance</b></p>
+            <p style="color: gray;">New Delhi, January 24, 2023: BharatPe, India’s leading fintech company, today announced three key appointments 
+                in line with its commitment towards building an organization with high levels of corporate governance, compliance and 
+                data security.The company announced the appointment of Ambuj Bhalla as its Chief Information 
+                Security Officer (CISO).</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">October 14,2022</h4>
+            <p><b>BharatPe launches ‘My Shop My Ad’ campaign for its merchant partners with Rohit Sharma and K L Rahul</b></p>
+            <p style="color: gray;">New Delhi, October 14, 2022: BharatPe, one of India’s leading fintech companies, 
+                today announced the launch of its new and one-of-a-kind marketing campaign called ‘My Shop My Ad’.
+                 This first-ever campaign in the fintech industry in India gives millions of offline merchants of BharatPe an 
+                 opportunity to create their own video advertisement- featuring India’s star cricketers, Rohit Sharma or KL Rahul.</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">September 29, 2022</h4>
+            <p><b>BharatPe’s POS vertical hits profitability in 2 years of launch</b></p>
+            <p style="color: gray;">New Delhi, September 29, 2022: BharatPe, India’s leading fintech company, 
+                today announced that it has achieved an important milestone on its 
+                road to profitability with BharatSwipe, the company’s POS business turning profitable. </p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">September 13, 2022</h4>
+            <p><b>BharatPe appoints two new Independent Directors</b></p>
+            <p style="color: gray;">New Delhi, September 13, 2022: Continuing its journey of building an accountable
+                 and transparent corporate governance structure, BharatPe, India’s leading fintech company, 
+                today announced the appointment of two industry veterans to its Board as Independent Directors.</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">August 2, 2022</h4>
+            <p><b>BharatPe appoints Nalin Negi as Chief Financial Officer</b></p>
+            <p style="color: gray;">
+                New Delhi, August 03, 2022: BharatPe, one of India’s largest fintech companies, today announced
+                 the appointment of Nalin Negi as its Chief Financial Officer. In his new role, Nalin will be spearheading
+                  the finance function for 
+                BharatPe and will be working towards making the company EBITDA positive by March 2023.</p>
+        </div>
+        
+        <div class="first">
+            <h4 style="color: gray;">July 5, 2022</h4>
+            <p><b>BharatPe pushes growth pedal harder: Facilitates over INR 3600 Cr in loans in Q1, FY23</b></p>
+            <p style="color: gray;">New Delhi, June 05, 2023: BharatPe, India’s leading name in the fintech ecosystem,
+                 has announced the appointment of Kohinoor Biswas as the Head - Consumer Lending. Kohinoor brings with him over
+                  14 years of experience in various aspects
+                 of consumer lending, cards portfolio management, business strategy, and digital initiatives.</p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">BharatPe in the News</h2>
+
+    <section class="newsdaily">
+        <div class="first">
+            <h4 style="color: gray;">January 11, 2023</h4>
+            <p><b>BharatPe gets in-principle nod for payment aggregator licence</b></p>
+            <p style="color: gray;">BharatPe gets in-principle nod for payment aggregator licence</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">January 9, 2023</h4>
+            <p><b>Effective workplace policies serve as the cornerstone of a successful workforce</b></p>
+            <p style="color: gray;">When a new employee joins a company, it is only the beginning of a long journey- 
+                A journey of empowering an employee to deliver excellent results, enabling the employee to learn 
+                and grow on the job and ensuring he/she is in sync with the vision and goals of the brand.</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">January 5, 2023</h4>
+            <p><b>The Fintech Space Will Continue To Drive Inclusivity Through Innovation</b></p>
+            <p style="color: gray;">While the COVID-19 pandemic accelerated the pace of digital transformation since 2020, 
+                the financial services industry in
+                 particular underwent a radical revolution, driven primarily by innovative technology solutions.</p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">March 2, 2022</h4>
+            <p><b>‘Payments businesses will not survive if they don’t innovate’</b></p>
+            <p style="color: gray;">It is hard to make money from payments and those fintech companies that don’t 
+                realise this, 
+                are going to be putting their businesses at risk, says Suhail Sameer, CEO of BharatPe. </p>
+        </div>
+
+        <div class="first">
+            <h4 style="color: gray;">February 1, 2022</h4>
+            <p><b>Budget 2022: ‘India leads world order’, here’s how India Inc reacted</b></p>
+            <p style="color: gray;">Nirmala Sitharaman came with some surprises in this Budget with the
+                 30 per cent tax on digital transactions and an extension of the Emergency Credit Line Guarantee Scheme
+                  (ECLGS) for MSMEs 
+                till March 2023 with its guarantee cover expanded by Rs 50,000 crore to Rs 5 lakh crore. </p>
+        </div>
+        
+        <div class="first">
+            <h4 style="color: gray;">February 1, 2022</h4>
+            <p><b>How startup ecosystem and India Inc responded to Union Budget 2022</b></p>
+            <p style="color: gray;">The Budget comes at a time when the Indian economy has been on the path
+                 to recovery from the pandemic slump, with Principal Economic Advisor in the Ministry of Finance,Sanjeev Sanyal, 
+                saying the economy is now performing above pre-pandemic levels.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="aboutus">
+                <img src="logo.jpg" alt="logo" width="25px" height="25px">
+                <p>BharatPe was started in 2018 with the mission to build a holistic FinTech platform for offline merchants and 
+                    small businesses. Today, BharatPe offers a suite of simple, easy-to-use and secure fintech products including payments
+                    and business loans to its merchant partners. The company has an extensive network of 13+ million merchants across 450+ 
+                    cities in the country.BharatPe’s consumer offering postpe is one of the fastest-growing 
+                    products in the Buy-Now- Pay-Later industry.</p>
+            </div>
+            <div class="quicklinks">
+                <h2>General</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.bharatpe.app&gl=IN&pli=1"><i class="fab fa-google-play"></i></a>
+                <a href="https://apps.apple.com/us/app/bharatpe/id1329385873"><i class="fab fa-app-store-ios"></i></a>
+                <a href="https://www.instagram.com/bharat.pe/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/bharatpeindia"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.youtube.com/@BharatPeIndia"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyrighttext">
+            <p>2024 All rights are reserved </p>
+        </div>
+    </footer>
+</body>
+</html>
